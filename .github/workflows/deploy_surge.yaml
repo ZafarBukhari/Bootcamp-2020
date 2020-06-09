@@ -26,8 +26,8 @@ jobs:
       with:
         node-version: 12
     - name: Install Surge 
-      run: npm install -globally surge
+      run: npm install -g surge
     - name: Run Surge
-      run: surge ./ piaic68537.surge.sh --token $((Secrets.SURGE_TOKEN)) 
+      run: surge ./ piaic68537.surge.sh --token $((secrets.SURGE_TOKEN)) 
 
     
