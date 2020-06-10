@@ -22,13 +22,13 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Setup Node.Js Environment
-      run: actions/setup-node@v1.4.2
+      uses: actions/setup-node@v1.4.2
       with:
         version: 12
 
     # Runs a set of commands using the runners shell
     - name: Github Actions for Yarn
-      run: Borales/actions-yarn@v2.1.0
+      uses: Borales/actions-yarn@v2.1.0
       with:
         # Yarn Command
         cmd: install
