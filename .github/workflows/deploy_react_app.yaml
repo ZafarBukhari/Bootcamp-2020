@@ -27,10 +27,10 @@ jobs:
         version: 12
 
     # Runs a set of commands using the runners shell
-    - name: Github Actions for Yarn
-      uses: Borales/actions-yarn@v2.1.0
+    - name: Github Actions for npm
+      uses: actions/npm install@v6.13.1
       with:
-        # Yarn Command
+        # npm install Command
         cmd: install
       
     - name: Creating npm Build
