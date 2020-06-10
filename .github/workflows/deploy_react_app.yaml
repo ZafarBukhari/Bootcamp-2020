@@ -28,7 +28,7 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Github Actions for npm
-      uses: actions/npm install@v6.13.1
+      uses: actions/setup-npm@v6.13.1
       with:
         # npm install Command
         cmd: install
