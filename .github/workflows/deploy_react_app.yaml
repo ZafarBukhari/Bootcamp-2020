@@ -27,7 +27,7 @@ jobs:
         node-version: 12
         
     - name: Install yarn
-      uses: Borales/actions-yarn@2.1.0
+      uses: Borales/actions-yarn@2.0.0
       with:
         cmd: install
         
@@ -38,4 +38,4 @@ jobs:
       run: npm install -g surge
       
     - name: Run Surge
-      run: surge ./build http://piaic68537newapp.surge.sh/ --token ${{secrets.SURGE_TOKEN_02}} 
+      run: surge ./build piaic68537newapp.surge.sh/ --token ${{secrets.SURGE_TOKEN_02}} 
