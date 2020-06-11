@@ -30,10 +30,12 @@ jobs:
       uses: Borales/actions-yarn@2.1.0
       with:
         cmd: install
+        
     - name: Yarn Build
       run: yarn build
       
     - name: Install Surge 
       run: npm install -g surge
+      
     - name: Run Surge
       run: surge ./build http://piaic68537newapp.surge.sh/ --token ${{secrets.SURGE_TOKEN_02}} 
